@@ -113,6 +113,8 @@ module.exports = {
             options: {
               maxWidth: 960,
               withWebp: true,
+              showCaptions: true,
+              backgroundColor: 'none',
               ignoreFileExtensions: [],
             }
           },
@@ -124,7 +126,14 @@ module.exports = {
           'gatsby-remark-prismjs',
           'gatsby-remark-copy-linked-files',
           'gatsby-remark-smartypants',
-          'gatsby-remark-external-links'
+          'gatsby-remark-external-links',
+          {
+            resolve: 'gatsby-remark-embed-gist',
+            options: {
+              username: 'rkkautsar',
+              includeDefaultCss: true
+            }
+          }
         ]
       }
     },
@@ -186,7 +195,7 @@ module.exports = {
         background_color: '#FFF',
         theme_color: '#F7A046',
         display: 'standalone',
-        icon: 'static/photo.jpg'
+        icon: 'static/icon.png'
       },
     },
     'gatsby-plugin-offline',
@@ -202,6 +211,6 @@ module.exports = {
       }
     },
     'gatsby-plugin-flow',
-    'gatsby-plugin-optimize-svgs',
+    'gatsby-plugin-optimize-svgs'
   ]
 };
