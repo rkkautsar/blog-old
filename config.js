@@ -17,7 +17,7 @@ module.exports = {
     },
     {
       label: 'About me',
-      path: 'https://rakha.tech/'
+      externalPath: 'https://rakha.tech/'
     },
   ],
   author: {
