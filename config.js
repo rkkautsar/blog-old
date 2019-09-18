@@ -17,12 +17,8 @@ module.exports = {
     },
     {
       label: 'About me',
-      path: '/pages/about'
+      path: 'https://rakha.tech/'
     },
-    {
-      label: 'Contact me',
-      path: '/pages/contacts'
-    }
   ],
   author: {
     name: 'Rakha Kanz Kautsar',
